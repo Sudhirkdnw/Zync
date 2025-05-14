@@ -1,951 +1,860 @@
-## Update Info
-
-# Date: 6 May 2025
-
-### Summary
-
-- Delete room function improved in admin panel.
-- Verification icon in Reel Solved.
-- SightEngine improved.
-- Bug fixes and improvements
-
-#### Note
-
-- replace first `pubspec.yaml` file.
-- run `flutter upgrade` in project terminal.
-- run `flutter clean` in project terminal.
-- run `flutter pub get` in project terminal.
-- replace README.md file
-
-#### Modified Files
-
-- `ffmpeg_manager.dart` renamed to `editor_manager.dart`
-
-- [add_post_controller.dart](lib/screens/add_post_screen/add_post_controller.dart)
-- [add_reel_screen_controller.dart](lib/screens/camera_screen/add_reel_screen_controller.dart)
-- [AndroidManifest.xml](android/app/src/main/AndroidManifest.xml)
-- [base_controller.dart](lib/common/controller/base_controller.dart)
-- [chat_card.dart](lib/screens/chats_screen/chat_view/chat_card.dart)
-- [chats_screen.dart](lib/screens/chats_screen/chats_screen.dart)
-- [const.dart](lib/utilities/const.dart)
-- [create_reel_screen_controller.dart](lib/screens/camera_screen/create_reel_screen_controller.dart)
-- [create_story_controller.dart](lib/screens/story_screen/create_story_screen/create_story_controller.dart)
-- [create_story_screen.dart](lib/screens/story_screen/create_story_screen/create_story_screen.dart)
-- [english.dart](lib/localization/languages/english.dart)
-- [editor_manager.dart](lib/common/managers/editor_manager.dart)
-- [edit_profile_controller.dart](lib/screens/edit_profile_screen/edit_profile_controller.dart)
-- [image_video_manager.dart](lib/common/managers/image_video_manager.dart)
-- [languages.dart](lib/localization/languages.dart)
-- [languages_controller.dart](lib/screens/languages_screen/languages_controller.dart)
-- [post_card.dart](lib/screens/post/post_card.dart)
-- [profile_picture_controller.dart](lib/screens/profile_picture_screen/profile_picture_controller.dart)
-- [profile_verification_controller.dart](lib/screens/profile_verification_screen/profile_verification_controller.dart)
-- [profile_verification_screen.dart](lib/screens/profile_verification_screen/profile_verification_screen.dart)
-- [reel_editor_screen.dart](lib/screens/camera_screen/reel_editor_screen.dart)
-- [reel_page.dart](lib/screens/reels_screen/reel/reel_page.dart)
-- [reels_screen.dart](lib/screens/reels_screen/reels_screen.dart)
-- [reels_screen_controller.dart](lib/screens/reels_screen/reels_screen_controller.dart)
-- [report_controller.dart](lib/screens/report_screen/report_controller.dart)
-- [report_sheet.dart](lib/screens/report_screen/report_sheet.dart)
-- [session_manager.dart](lib/common/managers/session_manager.dart)
-- [setting_model.dart](lib/models/setting_model.dart)
-- [sight_engine_service.dart](lib/common/api_service/sight_engine_service.dart)
-- [sign_in_with_email_screen.dart](lib/screens/login_screen/sign_in_with_email_screen.dart)
-- [string_extension.dart](lib/common/extensions/string_extension.dart)
-- [user_info_and_description.dart](lib/screens/reels_screen/reel/widget/user_info_and_description.dart)
-- [username_controller.dart](lib/screens/username_screen/username_controller.dart)
-- [username_screen.dart](lib/screens/username_screen/username_screen.dart)
-- [side_bar_list.dart](lib/screens/reels_screen/reel/widget/side_bar_list.dart)
-
-# Date: 23 April 2025
-
-### Summary
-
-- FFmpeg Removed
-
-#### Note
-
-- replace first `pubspec.yaml` file.
-- run `flutter upgrade` in project terminal.
-- run `flutter clean` in project terminal.
-- run `flutter pub get` in project terminal.
-- replace README.md file
-
-#### Modified Files
-
-- [add_reel_screen_controller.dart](lib/screens/camera_screen/add_reel_screen_controller.dart)
-- [build.gradle](android/app/build.gradle)
-- [const.dart](lib/utilities/const.dart)
-- [create_reel_screen.dart](lib/screens/camera_screen/create_reel_screen.dart)
-- [create_reel_screen_controller.dart](lib/screens/camera_screen/create_reel_screen_controller.dart)
-- [create_reel_top_view.dart](lib/screens/camera_screen/widget/create_reel_top_view.dart)
-- [create_story_bottom_view.dart](lib/screens/story_screen/create_story_screen/widget/create_story_bottom_view.dart)
-- [create_story_controller.dart](lib/screens/story_screen/create_story_screen/create_story_controller.dart)
-- [create_story_screen.dart](lib/screens/story_screen/create_story_screen/create_story_screen.dart)
-- [create_story_top_view.dart](lib/screens/story_screen/create_story_screen/widget/create_story_top_view.dart)
-- [ffmpeg_manager.dart](lib/common/managers/editor_manager.dart)
-- [floating_btn_for_creating.dart](lib/common/widgets/buttons/floating_btn_for_creating.dart)
-- [new_api_service.dart](lib/common/api_service/new_api_service.dart)
-- [random_screen.dart](lib/screens/random_screen/random_screen.dart)
-- [random_screen_controller.dart](lib/screens/random_screen/random_screen_controller.dart)
-- [reel_editor_screen.dart](lib/screens/camera_screen/reel_editor_screen.dart)
-- [reel_page.dart](lib/screens/reels_screen/reel/reel_page.dart)
-- [reel_service.dart](lib/common/api_service/reel_service.dart)
-
-----
-
-# Date: 27 March 2025
-
-### Summary
-
-- Reels Feature Added
-- Search With Interests (Posts, Reels, Users)
-- Interest attach with posts and reels
-- Code Optimized
-- Bug Fixed and improvements
-
-#### Note
-
-- replace first `pubspec.yaml` file.
-- run `flutter upgrade` in project terminal.
-- run `flutter clean` in project terminal.
-- run `flutter pub get` in project terminal.
-- replace README.md file
-
-#### Added Files
-
-- bookmark.png [images](assets/images/bookmark.png)
-- bookmark_fill.png [images](assets/images/bookmark_fill.png)
-- feed.png [images](assets/images/feed.png)
-- gallery.png [images](assets/images/gallery.png)
-- music.png [images](assets/images/music.png)
-- music_note.png [images](assets/images/music_note.png)
-- pause.png [images](assets/images/pause.png)
-- pause_fill.png [images](assets/images/pause_fill.png)
-- play.png [images](assets/images/play.png)
-- play_fill.png [images](assets/images/play_fill.png)
-- reels.png [images](assets/images/reels.png)
-- report.png [images](assets/images/report.png)
-- share.png [images](assets/images/share.png)
-- story.png [images](assets/images/story.png)
-- structure.jpg [images](assets/images/structure.jpg)
-- camera_rotate.png [images](assets/images/camera_rotate.png)
-- filter.png [images](assets/images/filter.png)
-- flash.png [images](assets/images/flash.png)
-- flash_off.png [images](assets/images/flash_off.png)
-
-- Outfit-Medium.ttf [fonts](assets/fonts/Outfit-Medium.ttf)
-- Outfit-Regular.ttf [fonts](assets/fonts/Outfit-Regular.ttf)
-
-- [add_reel_data.dart](lib/models/add_reel_data.dart)
-  [add_reel_screen.dart](lib/screens/camera_screen/add_reel_screen.dart)
-  [add_reel_screen_controller.dart](lib/screens/camera_screen/add_reel_screen_controller.dart)
-  [back_button.dart](lib/common/widgets/back_button.dart)
-  [black_gradient_shadow.dart](lib/common/widgets/black_gradient_shadow.dart)
-  [branch_manager.dart](lib/common/managers/branch_manager.dart)
-  [color_filter_pageview_list.dart](lib/screens/camera_screen/color_filter_pageview_list.dart)
-  [create_reel_bottom_view.dart](lib/screens/camera_screen/widget/create_reel_bottom_view.dart)
-  [create_reel_screen.dart](lib/screens/camera_screen/create_reel_screen.dart)
-  [create_reel_screen_controller.dart](lib/screens/camera_screen/create_reel_screen_controller.dart)
-  [create_reel_top_view.dart](lib/screens/camera_screen/widget/create_reel_top_view.dart)
-  [dashboard_reels_controller.dart](lib/screens/dashboard_reels_screen/dashboard_reels_controller.dart)
-  [dashboard_reels_screen.dart](lib/screens/dashboard_reels_screen/dashboard_reels_screen.dart)
-  [dashed_circle_painter.dart](lib/common/widgets/dashed_circle_painter.dart)
-  [ffmpeg_manager.dart](lib/common/managers/editor_manager.dart)
-  [filters.dart](lib/utilities/filters.dart)
-  [floating_btn_for_creating.dart](lib/common/widgets/buttons/floating_btn_for_creating.dart)
-  [follow_button.dart](lib/screens/follow_button/follow_button.dart)
-  [follow_controller.dart](lib/screens/follow_button/follow_controller.dart)
-  [follow_controller.dart](lib/screens/follow_button/follow_controller.dart)
-  [image_video_manager.dart](lib/common/managers/image_video_manager.dart)
-  [interest_selector.dart](lib/common/widgets/interest_selector.dart)
-  [list_extension.dart](lib/common/extensions/list_extension.dart)
-  [load_more_widget.dart](lib/common/managers/load_more_widget.dart)
-  [loader_widget.dart](lib/common/widgets/loader_widget.dart)
-  [music_categories_model.dart](lib/models/music_categories_model.dart)
-  [music_category_page.dart](lib/screens/camera_screen/music_sheet/music_category_page.dart)
-  [music_category_sheet.dart](lib/screens/camera_screen/music_sheet/music_category_sheet.dart)
-  [music_explore_page.dart](lib/screens/camera_screen/music_sheet/music_explore_page.dart)
-  [music_reels_screen.dart](lib/screens/reels_screen/music/music_reels_screen.dart)
-  [music_reels_screen_controller.dart](lib/screens/reels_screen/music/music_reels_screen_controller.dart)
-  [music_saved_page.dart](lib/screens/camera_screen/music_sheet/music_saved_page.dart)
-  [music_service.dart](lib/common/api_service/music_service.dart)
-  [music_sheet.dart](lib/screens/camera_screen/music_sheet/music_sheet.dart)
-  [music_sheet_controller.dart](lib/screens/camera_screen/music_sheet/music_sheet_controller.dart)
-  [music_trim_screen_controller.dart](lib/screens/camera_screen/music_trim_sheet/music_trim_screen_controller.dart)
-  [music_trim_sheet.dart](lib/screens/camera_screen/music_trim_sheet/music_trim_sheet.dart)
-  [musics_model.dart](lib/models/musics_model.dart)
-  [my_debouncer.dart](lib/common/managers/my_debouncer.dart)
-  [my_refresh_indicator.dart](lib/common/managers/my_refresh_indicator.dart)
-  [new_api_service.dart](lib/common/api_service/new_api_service.dart)
-  [no_data_view.dart](lib/common/widgets/no_data_view.dart)
-  [play_button.dart](lib/common/widgets/buttons/play_button.dart)
-  [reel_comment_card.dart](lib/screens/reels_screen/comments/reel_comment_card.dart)
-  [reel_comment_controller.dart](lib/screens/reels_screen/comments/reel_comment_controller.dart)
-  [reel_comment_model.dart](lib/models/reel_comment_model.dart)
-  [reel_comment_screen.dart](lib/screens/reels_screen/comments/reel_comment_screen.dart)
-  [reel_comments_model.dart](lib/models/reel_comments_model.dart)
-  [reel_editor_screen.dart](lib/screens/camera_screen/reel_editor_screen.dart)
-  [reel_model.dart](lib/models/reel_model.dart)
-  [reel_model_extension.dart](lib/models/reel_model_extension.dart)
-  [reel_page.dart](lib/screens/reels_screen/reel/reel_page.dart)
-  [reel_page_controller.dart](lib/screens/reels_screen/reel/reel_page_controller.dart)
-  [reel_page_type.dart](lib/enums/reel_page_type.dart)
-  [reel_service.dart](lib/common/api_service/reel_service.dart)
-  [reels_grid.dart](lib/screens/reels_screen/reels_grid.dart)
-  [reels_model.dart](lib/models/reels_model.dart)
-  [reels_screen.dart](lib/screens/reels_screen/reels_screen.dart)
-  [reels_screen_controller.dart](lib/screens/reels_screen/reels_screen_controller.dart)
-  [reels_text_field.dart](lib/screens/reels_screen/widget/reels_text_field.dart)
-  [reels_top_bar.dart](lib/screens/reels_screen/widget/reels_top_bar.dart)
-  [saved_reels_screen.dart](lib/screens/saved_reels_screen/saved_reels_screen.dart)
-  [saved_reels_screen_controller.dart](lib/screens/saved_reels_screen/saved_reels_screen_controller.dart)
-  [search_post_with_interest_screen.dart](lib/screens/search_post_with_interest_screen/search_post_with_interest_screen.dart)
-  [search_post_with_interest_screen_controller.dart](lib/screens/search_post_with_interest_screen/search_post_with_interest_screen_controller.dart)
-  [search_reel_with_interest_screen.dart](lib/screens/search_reel_with_interest_screen/search_reel_with_interest_screen.dart)
-  [search_reel_with_interest_screen_controller.dart](lib/screens/search_reel_with_interest_screen/search_reel_with_interest_screen_controller.dart)
-  [side_bar_list.dart](lib/screens/reels_screen/reel/widget/side_bar_list.dart)
-  [single_reel_screen.dart](lib/screens/single_reel_screen/single_reel_screen.dart)
-  [single_reel_screen_controller.dart](lib/screens/single_reel_screen/single_reel_screen_controller.dart)
-  [status_message_model.dart](lib/models/status_message_model.dart)
-  [user_info_and_description.dart](lib/screens/reels_screen/reel/widget/user_info_and_description.dart)
-
-#### Modified Files
-
-- All files from [languages](lib/localization/languages)
-
-- add_post_controller.dart
-- add_post_screen.dart
-- AndroidManifest.xml
-- api_service.dart
-- audio_space.dart
-- audio_space_interests_screen.dart
-- audio_space_invite_screen.dart
-- audio_space_members_view.dart
-- audio_space_messages_view.dart
-- audio_space_room_view.dart
-- audio_spaces_screen.dart
-- base_controller.dart
-- block_user_controller.dart
-- blocklist_screen.dart
-- build.gradle [build](../chatter/android/app/build.gradle)
-- build.gradle [build](../chatter/android/build.gradle)
-- buttons.dart
-- camera_filters.dart
-- chat_card.dart
-- chat_tag.dart
-- chats_screen.dart
-- chats_screen_controller.dart
-- chatting_controller.dart
-- chatting_view.dart
-- comment_card.dart
-- comment_controller.dart
-- comment_screen.dart
-- common_service.dart
-- const.dart
-- create_audio_space_controller.dart
-- create_audio_space_screen.dart
-- create_room_controller.dart
-- create_room_screen.dart
-- create_story_controller.dart
-- create_story_screen.dart
-- double_click_like.dart
-- edit_profile_controller.dart
-- edit_profile_screen.dart
-- faq_screen.dart
-- feed_screen.dart
-- feed_screen_controller.dart
-- feed_screen_top_bar.dart
-- feed_stories_controller.dart
-- feed_story_screen.dart
-- follower_following_controller.dart
-- follower_following_screen.dart
-- font_extension.dart
-- full_image_screen.dart
-- gradle-wrapper.properties
-- image_extension.dart
-- image_video_chat_picker.dart
-- indonesian.dart
-- Info.plist
-- int_extension.dart
-- interests_screen.dart
-- interstitial_manager.dart
-- invitation_controller.dart
-- invite_someone_controller.dart
-- invite_someone_screen.dart
-- join_requests_screen.dart
-- languages.dart
-- login_screen.dart
-- logo_tag.dart
-- main.dart
-- moderator_service.dart
-- my_cached_image.dart
-- navigation.dart
-- notification_controller.dart
-- notification_screen.dart
-- on_boarding_screen.dart
-- params.dart
-- Podfile
-- Podfile.lock
-- post_card.dart
-- post_controller.dart
-- post_service.dart
-- posts_model.dart
-- profile_controller.dart
-- profile_picture_controller.dart
-- profile_screen.dart
-- profile_verification_controller.dart
-- pubspec.lock
-- random_screen.dart
-- registration.dart
-- report_controller.dart
-- report_sheet.dart
-- room_card.dart
-- room_chat_view.dart
-- room_controller.dart
-- room_explore_by_interests.dart
-- room_invitation_screen.dart
-- room_members_controller.dart
-- room_members_screen.dart
-- room_menu.dart
-- room_model.dart
-- room_service.dart
-- room_sheet.dart
-- rooms_by_interest_controller.dart
-- rooms_by_interest_screen.dart
-- rooms_model.dart
-- rooms_you_own_screen.dart
-- search_bar.dart
-- search_controller.dart
-- search_screen.dart
-- setting_controller.dart
-- setting_screen.dart
-- settings.gradle
-- sight_engine_service.dart
-- sign_in_with_email_screen.dart
-- single_feed_model.dart
-- single_post_screen.dart
-- single_room_screen.dart
-- story_screen.dart
-- story_screen_controller.dart
-- tabbar_controller.dart
-- tabbar_screen.dart
-- tag_controller.dart
-- tag_screen.dart
-- top_bar.dart
-- user_notification_model.dart
-- user_service.dart
-- username_controller.dart
-- username_screen.dart
-- web_service.dart
-- web_sheet_view.dart
-- xmark_button.dart
-
-#### Deleted Files
-
-- no_data_found.dart
-- folder `camera_filters` is deleted. [camera_filters](/lib/library/)
-
-----
-
-## Update Info
-
-# Date: 27 December 2024
-
-### Summary
-
-- Android Camera issue solved
-- Some Improvements
-
-#### Note
-
-- replace first `pubspec.yaml` file.
-- run `flutter upgrade` in project terminal.
-- run `flutter clean` in project terminal.
-- run `flutter pub get` in project terminal.
-
-#### Added Files
-
-- [logger.dart](lib/common/managers/logger.dart)
-
-#### Modified Files
-
-- [add_post_controller.dart](lib/screens/add_post_screen/add_post_controller.dart)
-- [api_service.dart](lib/common/api_service/api_service.dart)
-- [build.gradle](android/app/build.gradle)
-- [camera_filters.dart](lib/library/camera_filters/camera_filters.dart)
-- [main.dart](lib/main.dart)
-- [post_card.dart](lib/screens/post/post_card.dart)
-- [pubspec.lock](pubspec.lock)
-- [pubspec.yaml](pubspec.yaml)
-- [README.md](README.md)
-- [result_view.dart](lib/library/camera_filters/result_view.dart)
-- [user_service.dart](lib/common/api_service/user_service.dart)
-- [video_player_sheet.dart](lib/screens/post/video_player_sheet.dart)
-
----
-
-# Date: 18 December 2024
-
-### Summary
-
-- Flutter upgrade
-- Dependencies Updated
-
-#### Note
-
-- replace first `pubspec.yaml` file.
-- run `flutter upgrade` in project terminal.
-
-#### Modified Files
-
-- [.gitignore](.gitignore)
-- [add_post_screen.dart](lib/screens/add_post_screen/add_post_screen.dart)
-- [audio_player_sheet.dart](lib/screens/post/audio_player_sheet.dart)
-- [audio_space_ended_for_host_screen.dart](lib/screens/audio_space/audio_spaces_screen/audio_space_screen/audio_space_ended_for_host_screen.dart)
-- [audio_space_ended_for_user_screen.dart](lib/screens/audio_space/audio_spaces_screen/audio_space_screen/audio_space_ended_for_user_screen.dart)
-- [audio_space_invite_screen.dart](lib/screens/audio_space/create_audio_space_screen/audio_space_invite_screen.dart)
-- [audio_space_members_view.dart](lib/screens/audio_space/audio_spaces_screen/audio_space_screen/audio_space_members_view.dart)
-- [audio_space_messages_view.dart](lib/screens/audio_space/audio_spaces_screen/audio_space_screen/audio_space_messages_view.dart)
-- [audio_space_room_view.dart](lib/screens/audio_space/audio_spaces_screen/audio_space_screen/audio_space_room_view.dart)
-- [audio_space_screen.dart](lib/screens/audio_space/audio_spaces_screen/audio_space_screen/audio_space_screen.dart)
-- [audio_spaces_screen.dart](lib/screens/audio_space/audio_spaces_screen/audio_spaces_screen.dart)
-- [back_button.dart](lib/screens/extra_views/back_button.dart)
-- [block_by_admin_screen.dart](lib/screens/block_by_admin_screen/block_by_admin_screen.dart)
-- [blocklist_screen.dart](lib/screens/block_list_screen/blocklist_screen.dart)
-- [build.gradle](android/app/build.gradle)
-- [buttons.dart](lib/screens/extra_views/buttons.dart)
-- [camera_filters.dart](lib/library/camera_filters/camera_filters.dart)
-- [capture_or_choose_sheet.dart](lib/screens/add_post_screen/capture_or_choose_sheet.dart)
-- [chat_card.dart](lib/screens/chats_screen/chat_view/chat_card.dart)
-- [chat_tag.dart](lib/screens/chats_screen/chat_view/chat_tag.dart)
-- [chats_screen.dart](lib/screens/chats_screen/chats_screen.dart)
-- [chatting_view.dart](lib/screens/chats_screen/chatting_screen/chatting_view.dart)
-- [circle_button.dart](lib/common/widgets/buttons/circle_button.dart)
-- [circle_painter.dart](lib/common/widgets/plusing_animation/circle_painter.dart)
-- [comment_screen.dart](lib/screens/post/comment/comment_screen.dart)
-- [confirmation_sheet.dart](lib/screens/sheets/confirmation_sheet.dart)
-- [const.dart](lib/utilities/const.dart)
-- [content_full_screen.dart](lib/screens/chats_screen/chatting_screen/content_full_screen.dart)
-- [create_audio_space_screen.dart](lib/screens/audio_space/create_audio_space_screen/create_audio_space_screen.dart)
-- [create_room_screen.dart](lib/screens/rooms_you_own/create_room_screen/create_room_screen.dart)
-- [double_click_like.dart](lib/screens/post/double_click_like.dart)
-- [edit_profile_screen.dart](lib/screens/edit_profile_screen/edit_profile_screen.dart)
-- [faq_screen.dart](lib/screens/faq_screen/faq_screen.dart)
-- [feed_screen.dart](lib/screens/feed_screen/feed_screen.dart)
-- [feed_story_screen.dart](lib/screens/feed_screen/feed_story_screen.dart)
-- [filters.dart](lib/library/camera_filters/src/filters.dart)
-- [full_image_screen.dart](lib/screens/profile_screen/full_image_screen.dart)
-- [gradle-wrapper.properties](android/gradle/wrapper/gradle-wrapper.properties)
-- [image_video_chat_picker.dart](lib/screens/chats_screen/chatting_screen/image_video_chat_picker.dart)
-- [interests_screen.dart](lib/screens/interests_screen/interests_screen.dart)
-- [invite_someone_screen.dart](lib/screens/chats_screen/chat_room_view/screens/invite_someone_screen/invite_someone_screen.dart)
-- [join_requests_screen.dart](lib/screens/chats_screen/chat_room_view/screens/join_requests_screen.dart)
-- [jsonld_parser.dart](lib/common/managers/url_extractor/parsers/jsonld_parser.dart)
-- [login_button.dart](lib/screens/login_screen/login_button.dart)
-- [login_controller.dart](lib/screens/login_screen/login_controller.dart)
-- [menu.dart](lib/common/widgets/menu.dart)
-- [notification_screen.dart](lib/screens/notification_screen/notification_screen.dart)
-- [on_boarding_screen.dart](lib/screens/on_boarding_screen/on_boarding_screen.dart)
-- [Podfile.lock](ios/Podfile.lock)
-- [post_card.dart](lib/screens/post/post_card.dart)
-- [profile_picture_screen.dart](lib/screens/profile_picture_screen/profile_picture_screen.dart)
-- [profile_screen.dart](lib/screens/profile_screen/profile_screen.dart)
-- [profile_verification_screen.dart](lib/screens/profile_verification_screen/profile_verification_screen.dart)
-- [pubspec.lock](pubspec.lock)
-- [pubspec.yaml](pubspec.yaml)
-- [random_screen.dart](lib/screens/random_screen/random_screen.dart)
-- [README.md](README.md)
-- [record_audio_screen.dart](lib/screens/add_post_screen/record_audio/record_audio_screen.dart)
-- [report_sheet.dart](lib/screens/report_screen/report_sheet.dart)
-- [result_view.dart](lib/library/camera_filters/result_view.dart)
-- [room_card.dart](lib/screens/rooms_screen/room_card.dart)
-- [room_chat_view.dart](lib/screens/chats_screen/chat_room_view/room_chat_view.dart)
-- [room_invitation_screen.dart](lib/screens/room_invitation_screen/room_invitation_screen.dart)
-- [room_members_screen.dart](lib/screens/chats_screen/chat_room_view/screens/room_member_screen/room_members_screen.dart)
-- [room_sheet.dart](lib/screens/rooms_screen/room_sheet.dart)
-- [search_screen.dart](lib/screens/search_screen/search_screen.dart)
-- [setting_controller.dart](lib/screens/setting_screen/setting_controller.dart)
-- [setting_screen.dart](lib/screens/setting_screen/setting_screen.dart)
-- [settings.gradle](android/settings.gradle)
-- [sign_in_with_email_screen.dart](lib/screens/login_screen/sign_in_with_email_screen.dart)
-- [story_screen.dart](lib/screens/story_screen/story_screen.dart)
-- [story_view.dart](lib/library/story_view/widgets/story_view.dart)
-- [username_screen.dart](lib/screens/username_screen/username_screen.dart)
-- [video_player_sheet.dart](lib/screens/post/video_player_sheet.dart)
-
----
-
-# Date: 9 November 2024
-
-### Summary
-
-- Profiles Clickable in Room Chat
-
-#### Note
-
-- run `flutter upgrade` in project terminal.
-
-#### Modified Files
-
-- chat_tag.dart
-- main.dart
-- pubspec.yaml
-- README.md
-
----
-
-# Date: 28 October 2024
-
-### Summary
-
-- Bug fixes and improvements
-- Profiles Clickable in Chat
-- Comments will be shown in admin panel
-
-#### Added Files
-
-- [Outfit-Light.ttf](assets/fonts/Outfit-Light.ttf)
-- intro_bg.png [images](assets/images/intro_bg.png)
-
-#### Modified Files
-
-- add_post_controller.dart
-- add_post_screen.dart
-- audio_player_sheet.dart
-- audio_space_members_view.dart
-- audio_spaces_controller.dart
-- audio_spaces_screen.dart
-- banner_ad.dart
-- build.gradle [build](../chatter/android/app/build.gradle)
-- build.gradle [build](../chatter/android/build.gradle)
-- camera_filters.dart
-- capture_or_choose_sheet.dart
-- chat.dart
-- chatting_controller.dart
-- chatting_view.dart
-- comment_card.dart
-- comment_controller.dart
-- confirmation_sheet.dart
-- const.dart
-- content_full_screen.dart
-- english.dart
-- firebase_notification_manager.dart
-- font_extension.dart
-- image_extension.dart
-- Info.plist
-- invitation_controller.dart
-- invite_someone_screen.dart
-- languages.dart
-- main.dart
-- meeting.png
-- mic_fill.png
-- my_cached_image.dart
-- notification_screen.dart
-- on_boarding_screen.dart
-- Podfile
-- Podfile.lock
-- post_card.dart
-- post_controller.dart
-- profile.png
-- profile_controller.dart
-- profile_screen.dart
-- project.pbxproj
-- pubspec.lock
-- pubspec.yaml
-- quill.png
-- random.png
-- random_screen.dart
-- README.md
-- report_sheet.dart
-- room_card.dart
-- room_controller.dart
-- room_members_screen.dart
-- room_memebers_controller.dart
-- room_sheet.dart
-- rooms_by_interest_controller.dart
-- Runner.xcscheme
-- search_controller.dart
-- search_screen.dart
-- splash_controller.dart
-- subscription_manager.dart
-- tabbar_screen.dart
-- video_player_sheet.dart
-
-#### Note
-
-- After changing files you have to run command flutter pub get. Make sure you
-  are using latest Flutter & Dart
-
----
-
-# Date: 16 September 2024
-
-### Summary
-
--- Username issue solved in EditProfile Screen
--- Double tap to like issue solved
--- Some bug fixes and improvements
-
-#### Added Files
-
-- No Added any files
-
-#### Modified Files
-
-- add_post_screen.dart
-- audio_player_sheet.dart
-- audio_spaces_screen.dart
-- AndroidManifest.xml
-- build.gradle
-- comment_controller.dart
-- feed_screen.dart
-- post_controller.dart
-- search_screen.dart
-- sight_engine_service.dart
-- edit_profile_controller.dart
-- Podfile.lock
-- post_card.dart
-- pubspec.lock
-- pubspec.yaml
-- random_screen.dart
-- README.md
-- settings.gradle
-- video_player_sheet.dart
-
-# Note
-
-- After changing files you have to run command flutter pub get. Make sure you
-  are using latest Flutter & Dart
-
-# Date: 17 August 2024
-
-### Summary
-
--- Hero, Audio Post, Everything search, refresh and so many things
--- Bug fixes and improvements
-
-#### Added Files
-
--
-
-audio_player_sheet.dart [audio_player_sheet.dart](lib/screens/post/audio_player_sheet.dart)
--
-capture_or_choose_sheet.dart [capture_or_choose_sheet.dart](lib/screens/add_post_screen/capture_or_choose_sheet.dart)
--
-full_image_screen.dart [full_image_screen.dart](lib/screens/profile_screen/full_image_screen.dart)
--
-moderator_service.dart [moderator_service.dart](lib/common/api_service/moderator_service.dart)
--
-post_liked_users_controller.dart [post_liked_users_controller.dart](lib/screens/post/post_liked_users_controller.dart)
--
-post_liked_users_screen.dart [post_liked_users_screen.dart](lib/screens/post/post_liked_users_screen.dart)
--
-post_users_model.dart [post_users_model.dart](lib/models/post_users_model.dart)
--
-record_audio_screen.dart [record_audio_screen.dart](lib/screens/add_post_screen/record_audio/record_audio_screen.dart)
--
-search_hashtags_model.dart [search_hashtags_model.dart](lib/models/search_hashtags_model.dart)
--
-sight_engine_media_model.dart [sight_engine_media_model.dart](lib/models/sight_engine_models/sight_engine_media_model.dart)
--
-sight_engine_service.dart [sight_engine_service.dart](lib/common/api_service/sight_engine_service.dart)
--
-text_moderation_model.dart [text_moderation_model.dart](lib/models/sight_engine_models/text_moderation_model.dart)
-
-- All files from [url_extractor](lib/common/managers/url_extractor)
-- All files from [add_to_cart](lib/library/add_to_cart)
-
---- Images [images](assets/images)
-
-- hashtag.png
-- send_story.png
-
-#### Modified Files
-
-- add_post_controller.dart
-- add_post_screen.dart
-- AndroidManifest.xml
-- api_service.dart
-- AppDelegate.swift
-- audio_space_invite_screen.dart
-- back_button.dart
-- banner_ad.dart
-- base_controller.dart
-- block_by_admin_screen.dart
-- build.gradle
-- buttons.dart
-- chat.dart
-- chat_card.dart
-- chat_tag.dart
-- chatting_controller.dart
-- chatting_view.dart
-- comment_card.dart
-- comment_controller.dart
-- comment_screen.dart
-- comments_model.dart
-- common_service.dart
-- const.dart
-- content_full_screen.dart
-- create_audio_space_controller.dart
-- create_story_controller.dart
-- cupertino_controller.dart
-- edit_profile_controller.dart
-- edit_profile_screen.dart
-- feed_screen.dart
-- feed_screen_controller.dart
-- feed_stories_controller.dart
-- feeds_model.dart
-- firebase_const.dart
-- gradle.properties
-- gradle-wrapper.properties
-- image_extension.dart
-- image_video_chat_picker.dart
-- languages.dart
-- login_button.dart
-- login_controller.dart
-- main.dart
-- my_cached_image.dart
-- params.dart
-- Podfile.lock
-- post_card.dart
-- post_controller.dart
-- post_service.dart
-- profile_controller.dart
-- profile_screen.dart
-- pubspec.lock
-- pubspec.yaml
-- random_screen.dart
-- registration.dart
-- report_sheet.dart
-- room_controller.dart
-- room_menu.dart
-- room_service.dart
-- rooms_by_interest_controller.dart
-- rooms_screen.dart
-- rooms_you_own_controller.dart
-- Runner.entitlements
-- search_controller.dart
-- search_screen.dart
-- session_manager.dart
-- setting_model.dart
-- settings.gradle
-- sign_in_with_email_screen.dart
-- story.dart
-- story_screen.dart
-- story_service.dart
-- story_view.dart
-- tabbar_controller.dart
-- tabbar_screen.dart
-- tag_controller.dart
-- user_service.dart
-- username_controller.dart
-- video_player_sheet.dart
-- web_service.dart
-- widget_test.dart
-
-- All files from [languages](lib/localization/languages)
-
-###### **NOTE**: After all changes, please run the command - `flutter pub get`
-
----
-
-# Date:- 3 July 2024
-
-#### Added Files
-
-- audio_space(Folder- All Files) [audio_space](lib/screens/audio_space)
-- agora_token_model.dart
-- agora_users_model.dart
-
---- Images [images](assets/images)
-
-- audio_mic.png
-- audio_room.png
-- check.png
-- handRaised.png
-- headphone.png
-- make_host.png
-- mic_fill.png
-- mic_slash.png
-- trash.png
-
-#### Modified Files
-
-- Main.storyboard [Main.storyboard](ios/Runner/Base.lproj/Main.storyboard)
-- build.gradle [build.gradle](android/app/build.gradle)
-- pubspec.yaml [pubspec.yaml](pubspec.yaml)
-- base_controller.dart
-- camera_filters.dart
-- chat.dart
-- chatting_view.dart
-- common_service.dart
-- const.dart
-- create_room_screen.dart
-- feed_screen.dart
-- feed_screen_top_bar.dart
-- firebase_const.dart
-- image_extension.dart
-- indonesian.dart
-- invite_someone_screen.dart
-- languages_screen.dart
-- main.dart
-- my_cached_image.dart
-- navigation.dart
-- notification_service.dart
-- on_boarding_screen.dart
-- params.dart
-- profile_screen.dart
-- profile_verification_controller.dart
-- profile_verification_screen.dart
-- random_screen.dart
-- report_controller.dart
-- report_sheet.dart
-- room_card.dart
-- room_controller.dart
-- room_explore_by_interests.dart
-- room_sheet.dart
-- rooms_by_interest_screen.dart
-- rooms_you_own_screen.dart
-- search_controller.dart
-- search_screen.dart
-- session_manager.dart
-- setting_model.dart
-- sign_in_with_email_screen.dart
-- story_screen.dart
-- top_bar.dart
-- user_service.dart
-- video_player_sheet.dart
-- web_service.dart
-
---- Languages [languages](lib/localization/languages)
-
-- languages.dart [localization](lib/localization)
-- vietnamese.dart
-- turkish.dart
-- swedish.dart
-- thai.dart
-- spanish.dart
-- russian.dart
-- polish.dart
-- portuguese.dart
-- italian.dart
-- japanese.dart
-- korean.dart
-- norwegian.dart
-- french.dart
-- german.dart
-- greek.dart
-- hindi.dart
-- danish.dart
-- dutch.dart
-- english.dart
-- chinese.dart
-- arabic.dart
-
-=======================================================
-
-# Date:- 26 Apr 2024
-
-#### Added Files
-
-- banner_ad.dart
-- interstitial_manager.dart
-- firebase_notification_manager.dart
-- subscription_manager.dart
-
-#### Note
-
-- notififcation_service.dart Renamed to ---- notification_service.dart
-
-#### Modified Files
-
-- add_post_controller.dart
-- const.dart
-- content_full_screen.dart
-- feed_screen.dart
-- invitations_model.dart
-- languages.dart
-- notification_screen.dart
-- notification_service.dart
-- Podfile.lock
-- post_card.dart
-- post_controller.dart
-- profile_screen.dart
-- profile_verification_controller.dart
-- profile_verification_screen.dart
-- pubspec.lock
-- pubspec.yaml
-- result_view.dart
-- room_invitation_screen.dart
-- username_controller.dart
-- username_screen.dart
-- video_player_sheet.dart
-- session_manager.dart
-- setting_controller.dart
-- setting_screen.dart
-- splash_controller.dart
-- story.dart
-- story_screen_controller.dart
-- story_service.dart
-- tabbar_screen.dart
-- user_service.dart
-- random_screen.dart
-- registration.dart
-- report_controller.dart
-- camera_filters.dart
-- chat_tag.dart
-- chatting_controller.dart
-- comment_card.dart
-- comment_controller.dart
-- edit_profile_controller.dart
-- edit_profile_screen.dart
-- feed_stories_controller.dart
-- firebase_notification_manager.dart
-- int_extension.dart
-- interests_controller.dart
-- languages_controller.dart
-- login_controller.dart
-- main.dart
-- my_cached_image.dart
-- AndroidManifest.xml
-- banner_ad.dart
-- interstitial_manager.dart
-- room_controller.dart
-- room_member_model.dart
-- room_menu.dart
-- add_post_screen.dart
-- back_button.dart
-- English.dart
-- feed_story_screen.dart
-- Russian.dart
-- Spanish.dart
-- Thai.dart
-- Turkish.dart
-- Vietnamese.dart
-- build.gradle
-- Danish.dart
-- Double_click_like.dart
-- Dutch.dart
-- Finnish.dart
-- French.dart
-- German.dart
-- Greek.dart
-- Hindi.dart
-- Indonesian.dart
-- Italian.dart
-- Japanese.dart
-- Korean.dart
-- Norwegian.dart
-- Polish.dart
-- Portuguese.dart
-- Notification_service.dart
-- Arabic.dart
-- Chinese.dart
-- Create_room_controller.dart
-- Hebrew.dart
-- Malay.dart
-- Swedish.dart
-- Norwegian.dart
-
-  =============================================
+Zync Flutter - Docs        
+
+documentation for
+
+* * *
+
+Main
+
+*   [Introduction](#introduction)
+*   [System required](#system_requried)
+
+* * *
+
+Project changes*   [Change Base URL](#change_base_url)
+*   [Change package name](#change_package_name)
+*   [Change app name](#change_app_name)
+*   [Change app color](#change_app_color)
+*   [Change app font family](#change_app_font_family)
+*   [Change app icon](#change_app_icon)
+
+* * *
+
+Firebase*   [Adding firebase to app](#adding_firebase_to_app)
+*   [Add Android app](#android_app_add_in_Firebase)
+*   [Add iOS app](#ios_app_add_in_Firebase)
+*   [Email sign in](#email_sign_in)
+*   [Enable firestore](#enable_firestore)
+
+* * *
+
+Agora*   [Setup agora](#setup_agora)
+
+* * *
+
+Branch.io*   [Branch.io setup](#branch_io_setup)
+
+* * *
+
+*   [Revenuecat](#revenuecat)
+*   [Google Admob](#google_admob)
+*   [Create application build](#create_build)
+*   [Update info](#update_info)
+
+Zync
+====
+
+The Ultimate Flutter Social Media
+
+Introduction
+============
+
+Zync app is an ultimate social media script built with flutter and Laravel as backend. It offers many advanced features and functions like Feed (Images, Videos, Text), Stories, Chat, Chat Rooms, Manage Chat Rooms & Members, Random Profiles, Interests, Push Notifications And Lot more... This package contains fully functional Zync flutter app, Backend, Database file & documentation. Using this script, any individual or company can save 100s of hours and publish twitter like social media app within couple of hours.
+
+System Required
+===============
+
+*   **Gmail** Account credentials for Firebase
+    
+*   **Apple** developer account credentials : [Create Account]( https://developer.apple.com/account)
+    
+*   **Android Studio** : [Download](https://developer.android.com/studio?gclid=CjwKCAjw04yjBhApEiwAJcvNodX3HCvOUdJv3NZQAI0ppZd7NoKWmhErYmITzfJZePTg5qNZHBQRzBoC2JoQAvD_BwE&gclsrc=aw.ds)
+    
+*   **Flutter Sdk** : [Download](https://docs.flutter.dev/get-started/install)
+    
+*   **Agora** Account : [Create Account](https://console.agora.io/)
+    
+*   **Branch.io** Account : [Create Account](https://dashboard.branch.io)
+    
+*   **Xcode** (Only Mac Users).
+    
+*   **RevenueCat** Account : [Create Account](https://www.revenuecat.com/)
+    
+
+Change Base URL
+===============
+
+*   Find the **Zync\_backend.zip** from the folder downloaded from codecanyon and open in android studio.
+    
+*   Open **Zync>lib/utils/const.dart**
+    
+*   Replace **"baseURL"** with your **Admin Panel URL** (https://yourdomain.com/)
+    
+*   Note : Make sure you have added "/" at the last.
+    
+
+Change package name
+===================
+
+*   **Android**
+    
+
+*   Step 1 : Go to **android > app**
+    
+*   Step 2 : Click to **build.gradle**
+    
+*   Step 3 : Here, change the only **applicationId** And it's done.
+    
+
+![android](https://docs.retrytech.com/asset/img/doctor/android_package_name.png)
+
+*   **iOS**
+    
+
+*   **Step 1 :** Now right click on **iOS** directory, **flutter > Open iOS module in Xcode**
+    
+
+![iOS_package_name_1](https://docs.retrytech.com/asset/img/doctor/iOS_package_name_1.png)
+
+Once the project gets opened in Xcode successfully, follow the steps below.
+
+*   Step 2 : Go to **runner > Signing & Capabilities**
+    
+*   Step 3 : Change your **bundle identifier** as you want, and it's done.
+    
+
+![iOS_package_name_2](https://docs.retrytech.com/asset/img/doctor/iOS_package_name_2.png)
+
+Change app name
+===============
+
+*   **Android**
+    
+
+*   **Step 1 :** Go to **android > app > src > main > AndroidManifest.xml** and make changes shown in the below image.
+    
+
+![android_app_name](https://docs.retrytech.com/asset/img/doctor/android_app_name.png)
+
+*   **iOS**
+    
+
+*   **Step 1 :** Now right click on iOS directory **flutter > Open iOS module in Xcode**
+    
+
+![iOS_package_name_1](https://docs.retrytech.com/asset/img/doctor/iOS_package_name_1.png)
+
+*   **Step 2 :** Now go to **Runner > General > Display Name**, change it as you want.
+    
+
+![iOS_app_name](https://docs.retrytech.com/asset/img/doctor/iOS_app_name.png)
+
+Change app color
+================
+
+*   **Step 1 :** Now go to your project **lib > utilities > const.dart** as shown in the below image.
+    
+
+![change_app_color](https://docs.retrytech.com/asset/img/change_app_color_1.png)
+
+Change app font family
+======================
+
+*   **Step 1 :** Select any font from google font
+    
+
+Here’s how you download the font:
+
+*   Visit the [https://fonts.google.com/](https://fonts.google.com/)
+    
+*   Search for your font.
+    
+*   Once you find it, click to open.
+    
+*   Click on the Download Family button on the top right side of your screen.
+    
+*   Extract the compressed file.
+    
+
+![payment_1](https://docs.retrytech.com/asset/img/font_1.png)
+
+*   **Step 2 :** Import the Font into Project
+    
+
+To import the Font in your project:
+
+*   Copy-Paste **\[font\].ttf** file into the fonts folder.
+    
+
+![payment_1](https://docs.retrytech.com/asset/img/font_2.png)
+
+*   **Step 3 :** Add Font to Pubspec.yaml
+    
+
+To add Font to pubspec.yaml file:
+
+*   Replace the family name with your font family. To get the family name, simply take the first part before the dash sign (-). For example, if the downloaded font name is **Montserrat-Regular** , take the **Montserrat** as your family name
+    
+*   Go to **pubspec.yaml** file:
+    
+*   Replace the **asset** path with the path where your font is residing.
+    
+*   Then **pub get** to successfully load your font
+    
+
+![payment_1](https://docs.retrytech.com/asset/img/font_3.png)
+
+Change app icon
+===============
+
+*   **Step 1 :** Generating Different Sized Icons
+    
+
+Go to [https://www.appicon.co/](https://www.appicon.co/) and **upload** the icon image and tick the **iPhone** and **Android** options and **click on Generate.** This site generates different sized Icons for both android and IOS at the same time.
+
+![payment_1](https://docs.retrytech.com/asset/img/change_icon_1.png)
+
+It will Download the Zip file named AppIcons with the android and Assets.xcassets named folders along with images for appstore and playstore which can be directly uploaded as an icon in both the stores
+
+![payment_1](https://docs.retrytech.com/asset/img/change_icon_2.png)
+
+Now, open your Project in Android Studio.
+
+*   **Step 2 :** Adding Icons in Android.
+    
+
+Navigate to **android/app/src/main/res** and right-click on res folder and click "open in Finder". Now delete all the mipmap folders in res folder and paste the mipmap folders from AppIcon/android folder which you have downloaded.
+
+![payment_1](https://docs.retrytech.com/asset/img/change_icon_4.png)
+
+*   **Step 3 :** Adding Icons in IOS
+    
+
+Now navigate to the **ios/Runner/Assets.xcassets.** Now after you are in Runner folder, right-click on Runner folder and click “open in Finder”. Now delete the Assets.xcassets folder and paste the Assets.xcassets folder from AppIcon/Assets.xcassets which you have downloaded.
+
+![payment_1](https://docs.retrytech.com/asset/img/change_icon_3.png)
+
+*   **Step 4 :** Run the Application
+    
+
+After manually changing the images in android and IOS folders now go to lib/main.dart and run the flutter project using the below command in the flutter console.
+
+`flutter run`
+
+![payment_1](https://docs.retrytech.com/asset/img/change_icon_5.png)
+
+Configure Firebase
+==================
+
+*   Go to the firebase project you might created while following backend documentation.
+    
+*   If you don't have, follow the steps below and create one project.
+    
+*   At first, follow this link [https://firebase.google.com/](https://firebase.google.com/)
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firebase_1.png)
+
+*   Now, we first have to create a Firebase project. Firebase project will go through and describe what it is. This allows us to add an app to that project. It can have many projects inside of Firebase.
+    
+
+![firebase_2](https://docs.retrytech.com/asset/img/doctor/firebase_2.png)
+
+*   Now, we have to give a name and id to the project, enable Google Analytics for the project, set an analytics location, and accept all the terms and conditions. Firebase console automatically creates a unique id for the project.
+    
+
+*   **Step 1 :** Giving a name to the project
+    
+
+![firebase_3](https://docs.retrytech.com/asset/img/doctor/firebase_3.png)
+
+*   **Step 2 :** Enable Google analytics for the project
+    
+
+![firebase_4](https://docs.retrytech.com/asset/img/doctor/firebase_4.png)
+
+*   **Step 3 :** First Choose default Firebase account and then create project
+    
+
+![firebase_5](https://docs.retrytech.com/asset/img/doctor/firebase_5.png)
+
+![firebase_6](https://docs.retrytech.com/asset/img/doctor/firebase_6.png)
+
+Add Android app to Firebase
+===========================
+
+*   In the next step, we have to choose the platform to add Firebase to our application. The platform can be Android, iOS, Web etc..
+    
+
+![android_firbase_1](https://docs.retrytech.com/asset/img/doctor/android_firbase_1.png)
+
+*   Your package name is generally the **applicationId** in your **build.gradle (app-level)** file
+    
+*   [See this page](https://docs.retrytech.com/how_to_get_sha1_key) for information on using keytool to get the **SHA-1** hash of your signing certificate
+    
+*   Add your **applicationid** in the first field and **SHA-1** to the third field as shown in the image below.
+    
+
+![android_firbase_2](https://docs.retrytech.com/asset/img/doctor/android_firbase_2.png)
+
+*   Download the **google-services.json** file & place it in your project's app root directory.
+    
+
+![android_firbase_3](https://docs.retrytech.com/asset/img/doctor/android_firbase_3.png)
+
+![android_app](https://docs.retrytech.com/asset/img/android_app.png)
+
+*   Back in the Firebase console-setup workflow, click **Next** to skip the remaining steps and then finish and complete
+    
+
+![android_firbase_4](https://docs.retrytech.com/asset/img/doctor/android_firbase_4.png)
+
+Add iOS app in Firebase
+=======================
+
+*   We have to choose the platform to add Firebase to our application. Click on iOS.
+    
+
+![ios_firbase_1](https://docs.retrytech.com/asset/img/doctor/ios_firbase_1.png)
+
+*   On the next screen, enter your iOS bundle ID & App nickname and click on Register App. You can find your **bundle ID** in the General tab for your app's primary target in Xcode. If specified, the app nickname will be used throughout the Firebase console to represent this app. Nicknames aren't visible to users.
+    
+
+![ios_firbase_2](https://docs.retrytech.com/asset/img/doctor/ios_firbase_2.png)
+
+*   Download the GoogleService-Info.plist file & move the GoogleService-Info.plist file you just downloaded into the root of your Xcode project and add it to all targets. Make sure the config file is not appended with additional characters, like (2).
+    
+
+![ios_firbase_3](https://docs.retrytech.com/asset/img/doctor/ios_firbase_3.png)
+
+![android_firbase_3](https://docs.retrytech.com/asset/img/doctor/ios_firbase_3_a.png)
+
+*   Back in the Firebase console-setup workflow, click **Next** to skip the remaining steps and the finish.
+    
+
+![ios_firbase_4](https://docs.retrytech.com/asset/img/doctor/ios_firbase_4.png)
+
+Email sign in
+=============
+
+*   Click to Authentication and sign in mathod tab
+    
+*   Then click on **email/password** provider
+    
+
+![android_firbase_1](https://docs.retrytech.com/asset/img/doctor/auth_1.png)
+
+![android_firbase_1](https://docs.retrytech.com/asset/img/doctor/auth_2.png)
+
+![android_firbase_1](https://docs.retrytech.com/asset/img/sign_in/email_1.png)
+
+*   Then both button switch to enable and save
+    
+
+![android_firbase_1](https://docs.retrytech.com/asset/img/sign_in/email_2.png)
+
+*   Your email and password successfully Enable
+    
+
+![android_firbase_1](https://docs.retrytech.com/asset/img/sign_in/email_3.png)
+
+Enable firestore
+================
+
+*   **Step 1 :** Click on Firestore Database and Create database.
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_1.png)
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_2.png)
+
+*   **Step 2 :** Model will be open click on **Next.**
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_3.png)
+
+*   **Step 3 :** Then click **Enable** button
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_4.png)
+
+*   **Step 4 :** After create Database, You have to change rules of database then click **publish** button. Follow step, shown below.
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_5.png)
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_6.png)
+
+*   **Step 5 :** Create index in firestore.
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/firestore_7.png)
+
+*   **Index**
+    
+
+*   Collection ID : **chats**
+    
+*   Fields :
+    
+    *   **usersIds** \= Arrays
+        
+    *   **time** \= Descending
+        
+*   Query Scope : Select Collection same as below the image.
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/firestore_8_1.png)
+
+*   After completing this index, the result will look like the image below.
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/firestore_10_1.png)
+
+Setup Agora
+===========
+
+*   Follow [This guide](https://docs.retrytech.com/agora_project_setup) and setup project at agora and collect **App id**
+    
+*   Go to your flutter project and Paste Here : **Zync > lib > utilities > const.dart**
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/agaora_flutter_Zync.png)
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/agora_8.png)
+
+![firebase_1](https://docs.retrytech.com/asset/img/doctor/agora_9.png)
+
+*   In downloaded file, you will get **customerID** and **customerSecret** keys.
+    
+*   Please add these to the project file as shown below
+    
+*   Paste here : **Zync > lib > utilities > const.dart**
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/agaora_flutter_Zync_2.png)
+
+Branch.io Setup
+===============
+
+*   Follow [This guide](https://docs.retrytech.com/branch_io) and setup project at Branch.io.
+    
+
+Revenuecat
+==========
+
+*   **Setup subscriptions**
+    
+
+*   You need to define subscriptions on [Google Play Console](https://play.google.com/console/u/0/signup) (For Android) and [Apple App Store Connect](https://appstoreconnect.apple.com/login) (For iOS) before connecting with RevenueCat.
+    
+
+Android in App Purchase Setup
+=============================
+
+*   **Play Store subscription setup**
+    
+
+*   For configuring subscriptions on Google Play Console, follow the steps below:
+    
+
+*   Go to [Google Play Console](https://play.google.com/console/u/0/signup) . Log in with your developer account.
+    
+*   Select the app in which you want to add subscriptions.
+    
+*   From the left menu, under the Monetize section, expand the Products category. Select Subscriptions.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC1.png)
+
+*   **Let's start creating the subscriptions:**
+    
+
+*   From the Monetize > Products > Subscriptions page, click **Create subscription.**
+    
+*   Select the app in which you want to add subscriptions.
+    
+*   From the left menu, under the Monetize section, expand the Products category. Select Subscriptions.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC2.png)
+
+*   Enter a unique **Product ID** for your subscription and a publicly viewable **Name.** Click **Create.**
+    
+*   For example, we will be creating a subscription for 3 months with:
+    
+
+*   **Product ID:** test\_3m
+    
+*   **Name:** Premium - 3 Months
+    
+
+Note : You won't be able to change or reuse a Product ID across any of your apps, even if the product is deleted.
+
+![RC1](https://docs.retrytech.com/asset/img/RC3.png)
+
+*   Click "**Add a base plan**"
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC4.png)
+
+*   Enter the **Base plan ID, Renewal type** (RevenueCat supports only Auto-renewing), **Tags , and Price.** Click Save.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC5.png)
+
+*   Click **Activate**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC6.png)
+
+*   Similarly, add two more subscriptions for **6 months and 12 months** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC7.png)
+
+*   That completes the subscription setup for the Google Play Console. Let's move on to the play Store subscription setup.
+    
+
+iOS in App Purchase Setup
+=========================
+
+**Before making products, Let's agree Agreements**
+
+*   Open [App Store Connect](https://appstoreconnect.apple.com/apps/) And select your app.
+    
+*   Note : Make you have agreed and added bank details at [Agreements](https://appstoreconnect.apple.com/agreements/#/)
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/in_app_purchase_13.png)
+
+*   Once you agree this, both status should be active like this
+    
+
+![firebase_1](https://docs.retrytech.com/asset/img/in_app_purchase_14.png)
+
+#### **App Store subscription setup**
+
+*   Follow the steps below to configure subscriptions on App Store Connect:
+    
+
+*   Go to [App Store Connect](https://appstoreconnect.apple.com/login) and log in with your developer account.
+    
+*   Select the **App**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC8.png)
+
+*   Choose the app in which your want to add subscriptions.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC9.png)
+
+*   Select **Subscriptions** from the left menu and click **Create** under **Subscription Groups.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC10.png)
+
+*   Enter a name for the Subscription Group and click **Create**.
+    
+
+Learn in detail about iOS Subscription Groups [**here**](https://www-origin.revenuecat.com/blog/engineering/ios-subscription-groups-explained/) .
+
+![RC1](https://docs.retrytech.com/asset/img/RC11.png)
+
+*   This will create and open the Subscription Group. From this page, you will be able to create subscriptions for your app. Click **Create** under **Subscriptions** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC12.png)
+
+*   Enter a **Reference Name** and **Product ID** for the subscription. Use the same format for the Product ID as we had described earlier. Click **Create** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC13.png)
+
+*   This will take you to the subscription details page. Select the **Subscription Duration** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC14.png)
+
+*   Scroll down to the **Subscription Prices** section and click "**Add Subscription Price**" button.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC15.png)
+
+*   Enter the subscription price in your preferred currency. Click **Next**.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC16.png)
+
+*   The next page will show you the automatically calculated prices for other countries and regions. Click **Next**.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC17.png)
+
+*   Click Confirm on the next page.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC18.png)
+
+*   Scroll down to the **App Store Localization** section. Click "**Add Localization**".
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC19.png)
+
+*   Select your preferred language and enter a **Display Name** and **Description** . Click **Add** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC20.png)
+
+*   You can skip the **App Store Promotion** for now as it's optional.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC21.png)
+
+*   Under the **Review Information** section, add a screenshot of the subscription screen of your app (you can also add a blank screenshot, having proper size for now, if you haven't yet created the subscription UI).
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC22.png)
+
+*   Scroll up to the top of the subscription page, and click Save. You will see a warning message if you haven't yet added localization to your subscription group. Click **Add localizations** (skip if you have already added).
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC23.png)
+
+*   This will take you back to the subscription group page. Click **Create** under **App Store Localization.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC24.png)
+
+*   Select your preferred language, enter a **Subscription Group Display Name**, and **select App Name.** Click **Create** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC25.png)
+
+*   This completes the addition of a subscription. You can follow similar steps for adding the other subscription plans as well, use the plus **("+")** button next to **Subscriptions** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC26.png)
+
+*   With all the subscription plans defined on Play Console and App Store Connect, we are ready to connect with RevenueCat.
+    
+
+* * *
+
+### **Connect with RevenueCat**
+
+*   Create an account or log in to RevenueCat from [here](https://www.revenuecat.com/?utm_medium=referral&utm_source=techp&utm_campaign=flutterflow&utm_content=partner) to get started.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC27.png)
+
+*   If you have created a new account, you will be automatically prompted to create your first project. Enter a **Project name** and click **"CREATE PROJECT"** button.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC28.png)
+
+*   Next, you need to add your Android and iOS apps to RevenueCat in order to use and manage the subscriptions.
+    
+
+### **Adding Android app**
+
+*   Let's start by configuring the Android app:
+    
+
+*   Go to **Apps** under **Project settings** (from the left menu). Select **Play Store** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC29.png)
+
+*   Enter the **App name** and the **package ID.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC30.png)
+
+*   You need to create another **Service Account** for RevenueCat. Follow [This guide](https://www.revenuecat.com/docs/creating-play-service-credentials?utm_medium=referral&utm_source=techp&utm_campaign=flutterflow&utm_content=partner) to generate the credentials in JSON format. Drag and drop the **Credentials JSON** file. Click **"SAVE CHANGES".**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC31.png)
+
+*   This completes the Android app setup on RevenueCat.
+    
+
+### **Adding iOS app**
+
+*   Follow the steps below to configure the iOS app:
+    
+
+*   Go back to the Apps page and click on "+ New".
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC32.png)
+
+*   Select **App Store.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC33.png)
+
+*   Enter an App name, Bundle ID, and App-Specific Shared Secret. To generate an App-Specific Shared Secret, follow [The guide](https://www.revenuecat.com/docs/itunesconnect-app-specific-shared-secret?utm_medium=referral&utm_source=techp&utm_campaign=flutterflow&utm_content=partner) . Once you have the key, click "SET SECRET", enter the value, and click Set. Then click "SAVE CHANGES".
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC34.png)
+
+*   This completes the iOS app setup on RevenueCat.
+    
+
+### **Define subscriptions on RevenueCat**
+
+*   You will find these configuration levels on the left menu of the RevenueCat dashboard under the section **Product Setup:**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC35.png)
+
+### **Products**
+
+*   In this configuration, you need to add all the subscriptions for both your Android and iOS app that the user can purchase. This is like a 1-to-1 mapping of the products in RevenueCat that you have already added to the stores (Google Play Store and Apple App Store).
+    
+*   To add products, follow these steps:
+    
+*   Select **Products** under the Product Setup section. Click **"+ New".**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC36.png)
+
+*   You need to enter the product **Identifier** and the **App** . Make sure you use exactly the same product ID you used for the Android/iOS subscription. Click **ADD** .
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC37.png)
+
+*   Similarly, add the other subscriptions as well (for both Android and iOS).
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC38.png)
+
+### **Entitlements**
+
+*   Follow these steps to add an entitlement:
+    
+
+*   Select **Entitlements** under the Product Setup section. Click **"+ New".**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC39.png)
+
+*   Enter an **Identifier** and **Description** for the entitlement. Click **ADD.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC40.png)
+
+*   Next, you need to attach the products to this entitlement. Click on the entitlement that you just created.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC41.png)
+
+*   Click on **Attach.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC42.png)
+
+*   Select a **Product** from the dropdown and click **ADD .**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC43.png)
+
+*   Similarly, attach all the other products to this entitlement.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC44.png)
+
+### **Offerings**
+
+*   Follow the steps below to add offerings:
+    
+
+*   Select **Offerings** under the Product Setup section. Click **"+ New".**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC45.png)
+
+*   Enter an **Identifier** and **Description** for the offering. Click **ADD.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC46.png)
+
+*   Click to open the offering that you just created.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC47.png)
+
+*   Click on **"+ New"** beside the Packages.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC48.png)
+
+*   Enter an **Identifier** for the package from the dropdown and add a **Description** . Click **ADD.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC49.png)
+
+*   Similarly, add the other packages as well.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC50.png)
+
+*   Click to open a package. Then click Attach.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC51.png)
+
+*   Select the respective Play Store and App Store products from the dropdown. Click **Attach.**
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC52.png)
+
+*   Similarly, attach the correct products to the other two packages as well.
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC53.png)
+
+*   This completes the three levels of configuration on the RevenueCat.
+    
+
+### **RevenueCat Project setup**
+
+*   you need to add the App Store Key and Play Store Key to Your project You can get these keys by going to the RevenueCat dashboard > API Keys > Public app-specific API keys. Copy and paste these keys into the respective fields of Project
+    
+
+![RC1](https://docs.retrytech.com/asset/img/RC55.png)
+
+![RC1](https://docs.retrytech.com/asset/img/RC54.png)
+
+![RC56](https://docs.retrytech.com/asset/img/RC57.png)
+
+Google Admob
+============
+
+*   Open [https://admob.google.com/home/get-started/](https://admob.google.com/home/get-started/) URL and setup account.
+    
+*   After configuring Ads in your admob consol, you have to add ad\_ids accordingly in your admin panel.
+    
+
+![payment_1](https://docs.retrytech.com/asset/img/Zync_admob.png)
+
+Create application build
+========================
+
+*   Follow [This guide](https://docs.flutter.dev/deployment/android) and you can create build for android.
+    
+*   Follow [This guide](https://docs.flutter.dev/deployment/ios) and you can create build for iOS.
+    
+
+Update info
+===========
+
+*   To upgrade your project, you have to **Add/Update/Remove files.** Please check below file for the information.
+    
+*   File name : **README.md**
+    
+*   Please be careful while making an updates this way, It might result in errors sometimes.
+    
+*   If it comes any issues while making an update, you are absolutely responsible for that since updating existing project is not included in the support.
+    
+
+Want to talk with us?
+---------------------
+
+*   Telegram (Support Desk) : [+91 7070799200](https://t.me/+917070799200)
+*   Email : [sudhirkdnw@gmail.com](mailto:sudhirkdnw@gmail.com)
+*   Whatsapp (No Support Here) : [+91 7070799200](https://wa.me/7070799200)
+
+$(window).scroll(function() { if ($(window).scrollTop() + $(window).height() == $(document).height()) { $('.nav-item').removeClass('active'); $('.nav-item .nav-link').removeClass('active'); $('.nav-item:last-child').addClass('active'); } else { $('.nav-item:last-child').removeClass('active'); } });
